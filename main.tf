@@ -1,10 +1,13 @@
 provider "aws" {
     region = "us-east-2"
-    access_key = "AKIAS4MUZIJN5H53OFP6"
-    secret_key = "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"
+    access_key = var.ACCESS_KEY
+    secret_key = var.SECRET_KEY
 }
 
 # variables
+variable "ACCESS_KEY" {}
+variable "SECRET_KEY" {}
+variable "HTTP_PORT" {}
 variable "HTTP_PORT" {}
 variable "HTTPS_PORT" {}
 variable "SSH_PORT" {}
